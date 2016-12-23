@@ -1,0 +1,29 @@
+{
+  "name": "rnd-song",
+  "version": "1.0.0",
+  "description": "A node module that returns a random song/album/artist via the Musixmatch API.",
+  "keywords": ["random", "rnd", "music", "track", "song", "album", "artist", "lyric", "snippet", "musixmatch"],
+  "author": {
+    "name": "Kodie Grantham",
+    "email": "kodie.grantham@gmail.com",
+    "url": "http://kodieg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodie/rnd-song.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kodie/rnd-song/issues"
+  },
+  "homepage": "https://github.com/kodie/rnd-song",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "p-if": "^1.1.0",
+    "promise": "^7.1.1",
+    "request": "^2.79.0"
+  }
+}
