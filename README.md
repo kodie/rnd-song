@@ -24,7 +24,7 @@ rndSong(options, function(err, res) {
     console.log(`Track: ${res.track.track_name}`);
     console.log(`Album: ${res.track.album_name}`);
     console.log(`Artist: ${res.track.artist_name}`);
-  } else { throw err; }
+  } else { console.log(new Error(err)); }
 });
 ```
 
