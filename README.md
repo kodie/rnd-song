@@ -63,12 +63,12 @@ Here is an example of what the response looks like:
       artist_id: 150259,
       artist_mbid: '73e5e69d-3554-40d8-8516-00cb38737a1c',
       artist_name: 'Rihanna',
-      album_coverart_100x100: 'http: //s.mxmcdn.net/images-storage/albums/nocover.png',
+      album_coverart_100x100: 'http://s.mxmcdn.net/images-storage/albums/nocover.png',
       album_coverart_350x350: '',
       album_coverart_500x500: '',
       album_coverart_800x800: '',
-      track_share_url: 'https: //www.musixmatch.com/lyrics/Rihanna/Take-a-Bow',
-      track_edit_url: 'https: //www.musixmatch.com/lyrics/Rihanna/Take-a-Bow/edit?utm_source=application&utm_campaign=api&utm_medium=Kodie+Grantham',
+      track_share_url: 'https://www.musixmatch.com/lyrics/Rihanna/Take-a-Bow',
+      track_edit_url: 'https://www.musixmatch.com/lyrics/Rihanna/Take-a-Bow/edit?utm_source=application&utm_campaign=api&utm_medium=Kodie+Grantham',
       commontrack_vanity_id: 'Rihanna/Take-a-Bow',
       restricted: 0,
       first_release_date: '2007-06-05T00: 00: 00Z',
@@ -94,9 +94,9 @@ Here is an example of what the response looks like:
       restricted: 0,
       instrumental: 0,
       snippet_body: 'But it\'s over now (but it\'s over now)',
-      script_tracking_url: 'https: //tracking.musixmatch.com/t1.0/m_js/e_0/sn_1/l_12080868/su_0/tr_VwPHgxSVfuIPJvwghgndMAbVlEgTMYDOJknA-zMFpPwbqm0z66GNIaXFcEz3QQPHzjuaECu6xhQ72jSi8xQj98kpU_6dvc_IoXs-T1kO-DfeFNHQUIuRDPQLNZ3A_mPuA6yNEvPbBTpu4nwnEF-d20v4IdOu9gTVuWZrU1ivZRVtZC0fubfXnP3G27k7tNLNE1FAOQWUxFsVWwcbqzkIqt24iuno_DYnM0Isl8hgl3NqGyBkAVPUkRoXYjT1ZGE3g3hME9iZAwyg4Cf2BOjeyzFzhExbYyMx_5fMfoGNa8W4GSFq8Wp_9Lfu0ZmYGXZ-MJbij0uhYO0ypjyDBQxR-EEEydMUg1BXGodOOLmnMppzjEizX_0G01AvyATZinLa/',
-      pixel_tracking_url: 'https: //tracking.musixmatch.com/t1.0/m_img/e_0/sn_1/l_12080868/su_0/tr_VwPHgxSVfuIPJvwghgndMAbVlEgTMYDOJknA-zMFpPwbqm0z66GNIaXFcEz3QQPHzjuaECu6xhQ72jSi8xQj98kpU_6dvc_IoXs-T1kO-DfeFNHQUIuRDPQLNZ3A_mPuA6yNEvPbBTpu4nwnEF-d20v4IdOu9gTVuWZrU1ivZRVtZC0fubfXnP3G27k7tNLNE1FAOQWUxFsVWwcbqzkIqt24iuno_DYnM0Isl8hgl3NqGyBkAVPUkRoXYjT1ZGE3g3hME9iZAwyg4Cf2BOjeyzFzhExbYyMx_5fMfoGNa8W4GSFq8Wp_9Lfu0ZmYGXZ-MJbij0uhYO0ypjyDBQxR-EEEydMUg1BXGodOOLmnMppzjEizX_0G01AvyATZinLa/',
-      html_tracking_url: 'https: //tracking.musixmatch.com/t1.0/m_html/e_0/sn_1/l_12080868/su_0/tr_VwPHgxSVfuIPJvwghgndMAbVlEgTMYDOJknA-zMFpPwbqm0z66GNIaXFcEz3QQPHzjuaECu6xhQ72jSi8xQj98kpU_6dvc_IoXs-T1kO-DfeFNHQUIuRDPQLNZ3A_mPuA6yNEvPbBTpu4nwnEF-d20v4IdOu9gTVuWZrU1ivZRVtZC0fubfXnP3G27k7tNLNE1FAOQWUxFsVWwcbqzkIqt24iuno_DYnM0Isl8hgl3NqGyBkAVPUkRoXYjT1ZGE3g3hME9iZAwyg4Cf2BOjeyzFzhExbYyMx_5fMfoGNa8W4GSFq8Wp_9Lfu0ZmYGXZ-MJbij0uhYO0ypjyDBQxR-EEEydMUg1BXGodOOLmnMppzjEizX_0G01AvyATZinLa/',
+      script_tracking_url: 'https://tracking.musixmatch.com/t1.0/m_js/e_0/sn_1/l_12080868/su_0/tr_VwPHgxSVfuIPJvwghgndMAbVlEgTMYDOJknA-zMFpPwbqm0z66GNIaXFcEz3QQPHzjuaECu6xhQ72jSi8xQj98kpU_6dvc_IoXs-T1kO-DfeFNHQUIuRDPQLNZ3A_mPuA6yNEvPbBTpu4nwnEF-d20v4IdOu9gTVuWZrU1ivZRVtZC0fubfXnP3G27k7tNLNE1FAOQWUxFsVWwcbqzkIqt24iuno_DYnM0Isl8hgl3NqGyBkAVPUkRoXYjT1ZGE3g3hME9iZAwyg4Cf2BOjeyzFzhExbYyMx_5fMfoGNa8W4GSFq8Wp_9Lfu0ZmYGXZ-MJbij0uhYO0ypjyDBQxR-EEEydMUg1BXGodOOLmnMppzjEizX_0G01AvyATZinLa/',
+      pixel_tracking_url: 'https://tracking.musixmatch.com/t1.0/m_img/e_0/sn_1/l_12080868/su_0/tr_VwPHgxSVfuIPJvwghgndMAbVlEgTMYDOJknA-zMFpPwbqm0z66GNIaXFcEz3QQPHzjuaECu6xhQ72jSi8xQj98kpU_6dvc_IoXs-T1kO-DfeFNHQUIuRDPQLNZ3A_mPuA6yNEvPbBTpu4nwnEF-d20v4IdOu9gTVuWZrU1ivZRVtZC0fubfXnP3G27k7tNLNE1FAOQWUxFsVWwcbqzkIqt24iuno_DYnM0Isl8hgl3NqGyBkAVPUkRoXYjT1ZGE3g3hME9iZAwyg4Cf2BOjeyzFzhExbYyMx_5fMfoGNa8W4GSFq8Wp_9Lfu0ZmYGXZ-MJbij0uhYO0ypjyDBQxR-EEEydMUg1BXGodOOLmnMppzjEizX_0G01AvyATZinLa/',
+      html_tracking_url: 'https://tracking.musixmatch.com/t1.0/m_html/e_0/sn_1/l_12080868/su_0/tr_VwPHgxSVfuIPJvwghgndMAbVlEgTMYDOJknA-zMFpPwbqm0z66GNIaXFcEz3QQPHzjuaECu6xhQ72jSi8xQj98kpU_6dvc_IoXs-T1kO-DfeFNHQUIuRDPQLNZ3A_mPuA6yNEvPbBTpu4nwnEF-d20v4IdOu9gTVuWZrU1ivZRVtZC0fubfXnP3G27k7tNLNE1FAOQWUxFsVWwcbqzkIqt24iuno_DYnM0Isl8hgl3NqGyBkAVPUkRoXYjT1ZGE3g3hME9iZAwyg4Cf2BOjeyzFzhExbYyMx_5fMfoGNa8W4GSFq8Wp_9Lfu0ZmYGXZ-MJbij0uhYO0ypjyDBQxR-EEEydMUg1BXGodOOLmnMppzjEizX_0G01AvyATZinLa/',
       updated_time: '2015-09-04T19: 49: 23Z'
    }
 }
