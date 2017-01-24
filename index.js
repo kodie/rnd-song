@@ -31,10 +31,10 @@ function getRandomTrack() {
               if (tracks.length > 0) {
                 var rnd = Math.floor((Math.random() * tracks.length));
                 fulfill(tracks[rnd]);
-              } else { reject(Error('No tracks found')); }
+              } else { reject('No tracks found'); }
             } else { reject(error); }
           });
-        } else { reject(Error('No tracks found')); }
+        } else { reject('No tracks found'); }
       } else { reject(error); }
     })
   });
@@ -54,7 +54,7 @@ function getById(type, id) {
         body = JSON.parse(body);
         if (body.message.body) {
           fulfill(body.message.body);
-        } else { reject(Error('Item not found')); }
+        } else { reject('Item not found'); }
       } else { reject(error); }
     });
   });
