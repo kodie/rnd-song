@@ -1,3 +1,5 @@
+'use strict';
+
 var promise = require('promise');
 var request = require('request');
 const pIf = require('p-if');
