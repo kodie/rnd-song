@@ -66,7 +66,7 @@ module.exports = function(options, cb) {
   snippet = options.snippet;
   language = options.language;
 
-  promiseRetry(function(retry, number) {
+  promiseRetry(function(retry, number){
     return getRandomTrack()
       .then(pIf(snippet, function(t){
         return getById('track.snippet', t.track.track_id)
@@ -84,5 +84,29 @@ module.exports = function(options, cb) {
   })
   .catch(function(e){
     cb(e);
+  });
+}
+
+if (require.main === module) {
+  var options = {};
+  var varPrefix = 'rndSong_';
+
+  for (var key in process.env) {
+    if (key.indexOf(varPrefix) == 0) {
+      options[key.substring(varPrefix.length)] = process.env[key];
+    }
+  }
+
+  if (process.argv.length > 2) {
+    for (var i = 2; i < process.argv.length; i++) {
+      var arg = process.argv[i].split('=');
+      options[arg[0]] = arg[1];
+    }
+  }
+
+  module.exports(options, function(error, response) {
+    if (!error) {
+      console.log(response);
+    } else { console.log(new Error(error)); }
   });
 }
