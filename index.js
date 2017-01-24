@@ -63,7 +63,7 @@ function getById(type, id) {
 module.exports = function(options, cb) {
   apiKey = options.api_key;
   genre = options.genre;
-  snippet = options.snippet;
+  snippet = (String(options.snippet).toLowerCase() == 'true');
   language = options.language;
 
   promiseRetry(function(retry, number){
