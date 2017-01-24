@@ -2,12 +2,13 @@
 
 A node module that returns a random song/album/artist via the [Musixmatch API](https://developer.musixmatch.com).
 
-## Installation
+## Installation & Usage
+### via Module:
+#### Installation:
 ```
-$ npm install rnd-song --save
+$ npm i rnd-song -S
 ```
-
-## Usage
+#### Usage:
 ```javascript
 var rndSong = require('rnd-song');
 
@@ -28,6 +29,17 @@ rndSong(options, function(err, res) {
 });
 ```
 
+### via Command Line Interface:
+#### Installation:
+```shell
+$ npm i rnd-song -g
+```
+#### Usage:
+```shell
+$ export rndSong_api_key=s3EAqFptASYO7YR2lLItZfcfOj0VCpvt
+$ export rndSong_language=en
+$ rnd-song genre=14 snippet=true
+```
 
 ## Options
 * `api_key` - Your Musixmatch API Key. **(Required)**
