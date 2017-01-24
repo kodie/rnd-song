@@ -1,6 +1,7 @@
 'use strict';
 
 var promise = require('promise');
+var promiseRetry = require('promise-retry');
 var request = require('request');
 const pIf = require('p-if');
 
@@ -65,16 +66,23 @@ module.exports = function(options, cb) {
   snippet = options.snippet;
   language = options.language;
 
-  getRandomTrack()
-    .then(pIf(snippet, function(t){
-      return getById('track.snippet', t.track.track_id)
-        .then(function(s){ t.snippet = s.snippet; return t; });
-      })
-    )
-    .then(function(t){
-      cb(null, t);
-    })
-    .catch(function(e){
-      cb(e);
-    });
+  promiseRetry(function(retry, number) {
+    return getRandomTrack()
+      .then(pIf(snippet, function(t){
+        return getById('track.snippet', t.track.track_id)
+          .then(function(s){ t.snippet = s.snippet; return t; })
+          .catch(retry);
+        })
+      );
+  }, {
+    retries: 4,
+    minTimeout: 0,
+    maxTimeout: 0
+  })
+  .then(function(t){
+    cb(null, t);
+  })
+  .catch(function(e){
+    cb(e);
+  });
 }
