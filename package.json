@@ -29,8 +29,11 @@
   "homepage": "https://github.com/kodie/rnd-song",
   "license": "MIT",
   "main": "index.js",
+  "bin": {
+    "rnd-song": "index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "dependencies": {
     "p-if": "^1.1.0",
