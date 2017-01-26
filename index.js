@@ -71,10 +71,16 @@ module.exports = function(options, cb) {
     return getRandomTrack()
       .then(pIf(snippet, function(t){
         return getById('track.snippet', t.track.track_id)
-          .then(function(s){ t.snippet = s.snippet; return t; })
-          .catch(retry);
+          .then(function(s){
+            if (!s.snippet.snippet_body) {
+              retry('Couldn\'t find track with lyrics snippet');
+            } else {
+              t.snippet = s.snippet;
+              return t;
+            }
+          }).catch(retry);
         })
-      );
+      ).catch(retry);
   }, {
     retries: 4,
     minTimeout: 0,
