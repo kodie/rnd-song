@@ -1,6 +1,6 @@
 {
   "name": "rnd-song",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node module that returns a random song/album/artist via the Musixmatch API.",
   "keywords": [
     "random",
