@@ -1,4 +1,4 @@
-# rnd-song
+# rnd-song [![npm version](https://badge.fury.io/js/rnd-song.svg)](https://badge.fury.io/js/rnd-song)
 
 A node module that returns a random song/album/artist via the [Musixmatch API](https://developer.musixmatch.com).
 
